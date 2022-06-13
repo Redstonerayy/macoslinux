@@ -15,9 +15,9 @@
 * AppMenu Plugin(Use Bold, Expland on Panel)
 * Seperator(Expand, Transparent) 
 * Notification Plugin
-* Notification Area
+* Notification Area or named Status Tray Items(hide some apps, e.g. synapse)
 * Pulse Audio
-* Launcher (Synapse)
+* Launcher (Name=Synapse, comment=Synapse, Command=synapse, Use StartUp Nofitifaction=true)
 * Clock
 * Seperator(Transparent) 
 
@@ -31,4 +31,13 @@ xfconf-query -c xsettings -p /Gtk/ShellShowsAppmenu -n -t bool -s true
 * add plank to session and startup
 
 # Synapse
+* preferences Startup on login
+* theme virgilio
 
+# LightDm
+* open /etc/lightdm/lightdm.conf as root
+* change `greeter-session` to `lightdm-webkit2-greeter`
+* change `webkit_theme` in /etc/lightdm/lightdm-webkit2-greeter.conf to `glorious`
+* as root add to /usr/share/backgrounds some backgrounds
+
+* change user icon in about me
