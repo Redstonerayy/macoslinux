@@ -1,6 +1,7 @@
 # Themes
 * Run `./theming.sh`
 * Select an icon theme, a window theme and the cursor theme
+* Change order of icons in window bar
 
 # Plank
 * Run `sudo pacman -Syu plank`
