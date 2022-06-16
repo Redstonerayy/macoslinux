@@ -1,0 +1,1 @@
+dconf dump /net/launchpad/plank/docks/ > ./plank-theme.ini

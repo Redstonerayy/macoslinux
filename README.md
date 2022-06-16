@@ -1,43 +1,59 @@
-# Steps
+# Themes
+* Run `./theming.sh`
+* Select an icon theme, a window theme and the cursor theme
+
+# Plank
+* Run `sudo pacman -Syu plank`
 * disable dock shadows in "Window Manager Tweaks"
-* download and install themes and icons as desired
 * delete old bottom panel
+* Run `./load-plank.sh`
+* add plank to session and startup as start on login
 
+# Panel
+* Run `yay -Syu vala-panel vala-panel-appmenu-xfce-git vala-panel-appmenu-registrar-git appmenu-gtk-module`
 
-# Panel Config
+### Panel Configuration
 * create new Panel at the top
 * Row size(32), Length(100%)
 * Look Panel
-* Add Items: 
-* Seperator(Transparent) 
-* Launcher(Name=Panther Launcher, Comment=Launcher, Command=panther_launcher, Icon=start-here, Use Startup Notification=true)
-* Seperator(Transparent) 
-* AppMenu Plugin(Use Bold, Expland on Panel)
-* Seperator(Expand, Transparent) 
-* Notification Plugin
-* Notification Area or named Status Tray Items(hide some apps, e.g. synapse)
-* Pulse Audio
-* Launcher (Name=Synapse, comment=Synapse, Command=synapse, Use StartUp Nofitifaction=true)
-* Clock
-* Seperator(Transparent) 
+* Add Items, Settings in (): 
+    * Seperator(Transparent) 
+    * Launcher
+        * Name=[launcher name] 
+        * Comment=[] 
+        * Command=[binary name] 
+        * Icon=[nice icon]
+        * Use Startup Notification=true
+    * Seperator(Transparent) 
+    * AppMenu Plugin(Use Bold, Expland on Panel)
+    * Seperator(Expand, Transparent) 
+    * Notification Plugin
+    * Notification Area or named Status Tray Items(hide some apps, e.g. synapse)
+    * Pulse Audio
+    * Launcher (Name=Synapse, comment=Synapse, Command=synapse, Use StartUp Nofitifaction=true)
+    * Clock
+    * Seperator(Transparent) 
 
+### Run commands for the Vala Panel
 ```
 xfconf-query -c xsettings -p /Gtk/ShellShowsMenubar -n -t bool -s true
 xfconf-query -c xsettings -p /Gtk/ShellShowsAppmenu -n -t bool -s true
 ```
 
-* select whitesur-light-theme-plank or transparent theme
-* plank preferences(Icon Zoom=125, Disable show unpinned, add Docklets: Desktop, Trash)
-* add plank to session and startup
-
-# Synapse
-* preferences Startup on login
-* theme virgilio
+# App Runner
+* Run `sudo pacman -Syu rofi`
+* Launch it with `rofu -show run`, bind this to a desired key combination
 
 # LightDm
+* Run `yay -Syu lightdm-webkit2-greeter lightdm-webkit2-theme-glorious`
 * open /etc/lightdm/lightdm.conf as root
 * change `greeter-session` to `lightdm-webkit2-greeter`
 * change `webkit_theme` in /etc/lightdm/lightdm-webkit2-greeter.conf to `glorious`
-* as root add to /usr/share/backgrounds some backgrounds
+* as root add to some backgrounds /usr/share/backgrounds 
+* change user icon in About Me settings
 
-* change user icon in about me
+# Useful Links
+* https://4kwallpapers.com/gradients/macos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-1455.html
+* https://www.pling.com/p/1403328/
+* https://www.pling.com/p/1405756/
+* https://www.youtube.com/watch?v=oQ8RWtD3MTQ

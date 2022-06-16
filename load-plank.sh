@@ -1,0 +1,1 @@
+cat ./plank-theme.ini | dconf load /net/launchpad/plank/docks/
