@@ -2,6 +2,7 @@
 * Run `./theming.sh`
 * Select an icon theme, a window theme and the cursor theme
 * Change order of icons in window bar
+* set wallpaper
 
 # Panel
 * Run `sudo pacman -Syu yay` to install the AUR helper
