@@ -3,14 +3,8 @@
 * Select an icon theme, a window theme and the cursor theme
 * Change order of icons in window bar
 
-# Plank
-* Run `sudo pacman -Syu plank`
-* disable dock shadows in "Window Manager Tweaks"
-* delete old bottom panel
-* Run `./load-plank.sh`
-* add plank to session and startup as start on login
-
 # Panel
+* Run `sudo pacman -Syu yay` to install the AUR helper
 * Run `yay -Syu vala-panel vala-panel-appmenu-xfce-git vala-panel-appmenu-registrar-git appmenu-gtk-module`
 
 ### Panel Configuration
@@ -40,6 +34,13 @@
 xfconf-query -c xsettings -p /Gtk/ShellShowsMenubar -n -t bool -s true
 xfconf-query -c xsettings -p /Gtk/ShellShowsAppmenu -n -t bool -s true
 ```
+
+# Plank
+* Run `sudo pacman -Syu plank`
+* disable dock shadows in "Window Manager Tweaks"
+* delete old bottom panel
+* Run `./load-plank.sh`
+* add plank to session and startup as start on login
 
 # App Runner
 * Run `sudo pacman -Syu rofi`
