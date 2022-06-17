@@ -7,13 +7,17 @@
 * Run `sudo pacman -Syu yay` to install the AUR helper
 * Run `yay -Syu vala-panel vala-panel-appmenu-xfce-git vala-panel-appmenu-registrar-git appmenu-gtk-module`
 
+# App Runner
+* Run `sudo pacman -Syu rofi`
+* Launch it with `rofu -show run`, bind this to a desired key combination
+
 ### Panel Configuration
 * create new Panel at the top
 * Row size(32), Length(100%)
 * Look Panel
 * Add Items, Settings in (): 
     * Seperator(Transparent) 
-    * Launcher
+    * Launcher or Whisker Menu
     * Seperator(Transparent) 
     * AppMenu Plugin(Use Bold, Expland on Panel)
     * Seperator(Expand, Transparent) 
@@ -36,10 +40,6 @@ xfconf-query -c xsettings -p /Gtk/ShellShowsAppmenu -n -t bool -s true
 * delete old bottom panel
 * Run `./load-plank.sh`
 * add plank to session and startup as start on login
-
-# App Runner
-* Run `sudo pacman -Syu rofi`
-* Launch it with `rofu -show run`, bind this to a desired key combination
 
 # LightDm
 * Run `yay -Syu lightdm-webkit2-greeter lightdm-webkit2-theme-glorious`
