@@ -6,7 +6,7 @@
 
 # Panel
 * Run `sudo pacman -Syu yay` to install the AUR helper
-* Run `yay -Syu vala-panel vala-panel-appmenu-xfce-git vala-panel-appmenu-registrar-git appmenu-gtk-module`
+* Run `yay -Syu appmenu-gtk-module`
 
 # App Runner
 * Run `sudo pacman -Syu rofi`
@@ -16,6 +16,7 @@
 * create new Panel at the top
 * Row size(32), Length(100%)
 * Look Panel
+* Set Panel Background to a custom transparent color
 * Add Items, Settings in (): 
     * Seperator(Transparent) 
     * Launcher or Whisker Menu
@@ -27,7 +28,7 @@
     * Pulse Audio
     * Launcher (Name=Synapse, comment=Synapse, Command=synapse, Use StartUp Nofitifaction=true)
     * Clock
-    * Seperator(Transparent) 
+    * Seperator(Transparent)
 
 ### Run commands for the Vala Panel
 ```
