@@ -14,3 +14,5 @@ cp -r mojave-cursors $HOME/.icons
 cp -r white-icons/WhiteSur $HOME/.icons
 cp -r white-icons/WhiteSur-dark $HOME/.icons
 cp -r candy-icons $HOME/.icons
+#backgrounds
+sudo cp ./macos.jpeg /usr/share/backgrounds
