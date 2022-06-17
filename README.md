@@ -14,11 +14,6 @@
 * Add Items, Settings in (): 
     * Seperator(Transparent) 
     * Launcher
-        * Name=[launcher name] 
-        * Comment=[] 
-        * Command=[binary name] 
-        * Icon=[nice icon]
-        * Use Startup Notification=true
     * Seperator(Transparent) 
     * AppMenu Plugin(Use Bold, Expland on Panel)
     * Seperator(Expand, Transparent) 
